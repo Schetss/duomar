@@ -30,13 +30,18 @@
 			width: 150%;
 		}
 
-		@include mq($bp4) {
+		@include mq($bp5) {
 			width: 105%;
 		}
 	}
 }
 
 .main-head-overlay {
+	margin-top: -1px;
+	@include mq($bp5) {
+		margin-top: 0px;
+	}
+
 	height: 300px;
 	width: 100%;
 	position: absolute;

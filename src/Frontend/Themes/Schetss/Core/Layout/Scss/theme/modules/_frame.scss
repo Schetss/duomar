@@ -43,29 +43,29 @@
 }
 
 .header {
-	border-bottom: 1px solid $alpha-text-color;
+	//border-bottom: 1px solid $gamma-ui-color;
 
 	@include padding-tb(0.8,0.8);
 }
 
 .header-left {
-	width: 250px;
-	float: left;
+	// width: 250px;
+	// float: left;
+	text-align: center;
 
 	.logo {
-		
-		width: 135px;
-		height: 25px;
+		width: 157px;
+		height: 106px;
 
-		@include mq($bp2) {
-			width: 190px;
-			height: 35px;
-		}
+		// @include mq($bp2) {
+		// 	width: 190px;
+		// 	height: 35px;
+		// }
 
-		@include mq($bp3) {
-			width: 244px;
-			height: 45px;
-		}
+		// @include mq($bp3) {
+		// 	width: 244px;
+		// 	height: 45px;
+		// }
 	}
 }
 
@@ -100,7 +100,7 @@
 //
 
 .main {
-	border-top: 1px solid $alpha-ui-color;
+	//border-top: 1px solid $alpha-ui-color;
 	// background-color: $beta-text-color;
 }
 
