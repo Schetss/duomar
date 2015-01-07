@@ -7,7 +7,7 @@
 .main-nav {
 	float: left;
 	width: 100%;
-
+	
 	ul {
 		@extend %clearfix;
 		font-family: $alpha-font-family;
@@ -17,7 +17,7 @@
 
 
 	a {
-		color: $alpha-text-color;
+		color: $beta-text-color;
 		text-decoration: none;
 		font-weight: $beta-font-weight;
 	}
@@ -45,6 +45,7 @@
 .mobile-nav .main-nav {
 	font-size: 1.2em;
 	// margin-top: 0.8em;
+background-color: $alpha-ui-color;
 
 	ul {
 		padding-bottom: 0;
@@ -57,6 +58,7 @@
 	}
 
 	a {
+		color: $beta-text-color;
 		display: block;
 		width: 100%;
 		@include padding-tb(0.6,0.6);
@@ -89,7 +91,7 @@
 			width: 100%;
 			float: left;
 			@include horizontal-nav();
-			@include text-dimensions(14,0.8,0);
+			@include text-dimensions(16,0.7,0);
 		}
 
 		li {
@@ -112,12 +114,14 @@
 		a {
 			color: darken($beta-text-color,10);
 			@include px-padding-lr(0,0);
+			outline: 0;
 		}
 
 		.selected {
 			background: none;
 			a {
 			color: $beta-text-color;
+			outline: 0;
 			}
 		}
 
@@ -185,7 +189,7 @@
 
 .main-nav-trigger {
 	cursor: pointer;
-	color: $alpha-text-color;
+	color: $alpha-ui-color;
 	float: right;
 	@include svg-bg("../img/icon-menu", ".png", 100%, no-repeat);
 	font-size: 1.2em;

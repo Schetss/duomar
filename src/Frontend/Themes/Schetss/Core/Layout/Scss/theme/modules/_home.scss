@@ -38,9 +38,9 @@
 
 .main-head-overlay {
 	margin-top: -1px;
-	@include mq($bp5) {
-		margin-top: 0px;
-	}
+	// @include mq($bp5) {
+	// 	margin-top: 0px;
+	// }
 
 	height: 300px;
 	width: 100%;
@@ -112,7 +112,8 @@
 //
 
 .greyBlock {
-	background-color: $alpha-text-color;
+	//background-color: lighten($alpha-text-color,5);
+	background-color: $alpha-ui-color;
 	color: $beta-text-color;
 	text-align: center;
 	@include padding-tb(1,2);
@@ -140,12 +141,13 @@
 	}
 
 	a {
+		border: 2px solid $beta-text-color;
 		color: $beta-text-color;
 		font-size: 1.2em;
 		font-weight: $beta-font-weight;
-		background-color: $alpha-ui-color;
+		background-color: lighten($alpha-ui-color,5);
 		border-radius: $radius;	
-		width: 200px;
+		width: 250px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
@@ -179,7 +181,7 @@
 	}
 
 	h1 {
-		@include padding-tb(0,1);
+		@include padding-tb(0,0.4);
 		color: $alpha-ui-color;
 		font-size: 2em;
 		line-height: 1.5em;
@@ -188,7 +190,7 @@
 
 	h2 {
 		@include padding-tb(0,1);
-		font-family: $beta-font-family;
+		font-family: $alpha-font-family;
 		font-size: 1.3em;
 		line-height: 1.7em;
 	}

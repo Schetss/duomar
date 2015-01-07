@@ -1143,14 +1143,22 @@ button {
       font-size: 2.5em; } }
 
 .header {
+  border-bottom: 1px solid #19388a;
   padding-top: 1.2em;
   padding-bottom: 1.2em; }
+  @media (min-width: 42.5em) {
+    .header {
+      border: 0; } }
 
 .header-left {
   text-align: center; }
   .header-left .logo {
     width: 157px;
     height: 106px; }
+    @media (min-width: 42.5em) {
+      .header-left .logo {
+        width: 200px;
+        height: 135px; } }
 
 .header-right {
   float: right; }
@@ -1222,7 +1230,10 @@ button {
   .contact-info h5 {
     font-size: 1.6em;
     font-family: "proxima-nova", arial, sans-serif;
-    padding-top: 0.9em;
+    padding-top: 1.2em;
+    padding-bottom: 0.15em; }
+  .contact-info h5:first-child {
+    padding-top: 0em;
     padding-bottom: 0.15em; }
   .contact-info p {
     font-size: 1.3em;
@@ -1322,9 +1333,6 @@ button {
   display: block;
   background-color: black;
   opacity: 0.5; }
-  @media (min-width: 71.25em) {
-    .main-head-overlay {
-      margin-top: 0px; } }
 
 .main-head-quote {
   color: #f8f8f8;
@@ -1360,7 +1368,7 @@ button {
   margin-bottom: 4.5em; }
 
 .greyBlock {
-  background-color: #303030;
+  background-color: #19388a;
   color: #f8f8f8;
   text-align: center;
   padding-top: 1.5em;
@@ -1382,12 +1390,13 @@ button {
       .greyBlock h2 {
         font-size: 2em; } }
   .greyBlock a {
+    border: 2px solid #f8f8f8;
     color: #f8f8f8;
     font-size: 1.2em;
     font-weight: 700;
-    background-color: #19388a;
+    background-color: #1d41a0;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1414,14 +1423,14 @@ button {
       margin-bottom: 5.4em; } }
   .block2 h1 {
     padding-top: 0em;
-    padding-bottom: 1.5em;
+    padding-bottom: 0.6em;
     color: #19388a;
     font-size: 2em;
     line-height: 1.5em; }
   .block2 h2 {
     padding-top: 0em;
     padding-bottom: 1.5em;
-    font-family: "ff-tisa-web-pro", serif;
+    font-family: "proxima-nova", arial, sans-serif;
     font-size: 1.3em;
     line-height: 1.7em; }
   .block2 p {
@@ -1585,7 +1594,7 @@ button {
     line-height: 1.5em;
     margin-bottom: 1.5em; }
   .main-nav a {
-    color: #303030;
+    color: #f8f8f8;
     text-decoration: none;
     font-weight: 700; }
   .main-nav .selected a {
@@ -1598,7 +1607,8 @@ button {
 
 .main-nav,
 .mobile-nav .main-nav {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  background-color: #19388a; }
   .main-nav ul,
   .mobile-nav .main-nav ul {
     padding-bottom: 0;
@@ -1608,6 +1618,7 @@ button {
     border-top: 1px solid #a8a9ad; }
   .main-nav a,
   .mobile-nav .main-nav a {
+    color: #f8f8f8;
     display: block;
     width: 100%;
     padding-top: 0.9em;
@@ -1632,8 +1643,8 @@ button {
       .mobile-nav .main-nav ul {
         width: 100%;
         float: left;
-        font-size: 0.875em;
-        line-height: 1.3714285714em;
+        font-size: 1em;
+        line-height: 1.05em;
         margin-bottom: 0em; }
         .main-nav ul li, .main-nav ul a,
         .mobile-nav .main-nav ul li,
@@ -1655,13 +1666,15 @@ button {
       .mobile-nav .main-nav a {
         color: #dfdfdf;
         padding-left: 0px;
-        padding-right: 0px; }
+        padding-right: 0px;
+        outline: 0; }
       .main-nav .selected,
       .mobile-nav .main-nav .selected {
         background: none; }
         .main-nav .selected a,
         .mobile-nav .main-nav .selected a {
-          color: #f8f8f8; } }
+          color: #f8f8f8;
+          outline: 0; } }
 
 @media (min-width: 42.5em) {
   .main-nav-sub {
@@ -1693,7 +1706,7 @@ button {
 
 .main-nav-trigger {
   cursor: pointer;
-  color: #303030;
+  color: #19388a;
   float: right;
   background: 100% url("../img/icon-menu.png") no-repeat no-repeat;
   background-size: auto;
@@ -1772,14 +1785,10 @@ button {
       width: 35%;
       float: left; } }
   .article .left .article-image {
-    height: 250px;
     overflow: hidden; }
-    @media (min-width: 42.5em) {
-      .article .left .article-image {
-        height: 200px; } }
-    @media (min-width: 60em) {
-      .article .left .article-image {
-        height: 250px; } }
+    .article .left .article-image .article-video {
+      width: 100%;
+      height: 250px; }
   .article .left img {
     width: 100%; }
     @media (min-width: 42.5em) {
