@@ -23,7 +23,7 @@
 
 				<div class="right">
 					<header>
-						<h2><!-- <a href="{$widgetBlogRecentArticlesFull.full_url}" title="{$widgetBlogRecentArticlesFull.title}"> --><a href="#">{$widgetBlogRecentArticlesFull.title}</a></h2>
+						<h2><!-- <a href="{$widgetBlogRecentArticlesFull.full_url}" title="{$widgetBlogRecentArticlesFull.title}"> -->{$widgetBlogRecentArticlesFull.title}</h2>
 						<!-- <p class="date">
 							{$widgetBlogRecentArticlesFull.publish_on|date:{$dateFormatLong}:{$LANGUAGE}}
 						</p> -->

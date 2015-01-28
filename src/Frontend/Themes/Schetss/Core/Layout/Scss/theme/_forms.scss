@@ -108,12 +108,16 @@ button {
 	border: none;
 	float: right;
 	border-radius: $radius;
-	width: 200px;
+	width: 100%;
 	height: 40px;
 	margin-top: 35px;
 	font-size: 1.1em;
 	font-weight: 600;
 	-webkit-appearance: none;
+
+	@include mq($bp3) {
+		width: 275px;
+	}
 
 	// @extend %btn;
 	// @include btn-s;
